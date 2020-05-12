@@ -1,0 +1,40 @@
+.expenselist{
+    padding: 3rem 0;
+
+    &-content,
+    &-heading{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid $color-grey;
+margin-bottom: -1px;
+padding: 1.5rem;
+        &__left{
+            word-break: break-all;
+            padding-right: 2.5rem;
+        }
+        &__right{}
+    }
+    &-heading{
+        background: $color-blue;
+        border: none;
+        color: $color-white;
+    }
+    .expense-date{
+        font-size: 1.5rem;
+        color: $color-grey-secondary;
+    }
+    .btn-list{
+        display: block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background: $color-grey;
+        color: $color-dark;
+        font-size: 1.3rem;
+
+        &:hover{
+            background-color: $color-dark;
+            color: $color-white;
+        }
+    }
+}

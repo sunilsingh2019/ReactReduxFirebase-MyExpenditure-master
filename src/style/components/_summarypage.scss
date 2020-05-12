@@ -1,0 +1,15 @@
+.summary{
+    padding: 4rem 0;
+
+    &-view{
+        line-height: 3rem;
+        margin-bottom: 3rem;
+        color: $color-dark;
+        font-weight: 400;
+
+        span{
+            font-weight: 700;
+        }
+    }
+    
+}

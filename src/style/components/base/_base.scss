@@ -1,0 +1,127 @@
+*,
+textarea,
+input, button, a{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  outline: none;
+}
+html{
+  font-size: 62.5%;
+
+  @include respond-mediaQuery(tab-port){
+    font-size:75%; // forn size defie 12px = (100/16)*12= 75%;
+  
+  }
+  @include respond-mediaQuery(tab-landscape){
+    font-size:52.25%; // forn size defie 10px = (100/16)*10= 52.25%;
+  }
+  @include respond-mediaQuery(tab-port){
+    font-size:50%; // forn size defie 8px = (100/16)*8= 50%;
+  }
+  @include respond-mediaQuery(phone){
+    font-size:40%; // forn size defie 8px = (100/16)*8= 50%;
+  }
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin: 0;
+  padding: 0;
+}
+::selection{
+  background: $color-blue;
+  color: $color-white;
+}
+
+
+
+
+
+h1{
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: $color-dark;
+  line-height: 3.5rem;
+}
+h2{
+  font-size: 2rem;
+
+}
+.is-active{
+  font-weight: bold;
+}
+
+.container{
+  max-width: 100rem;
+  margin: 0 auto;
+  @include respond-mediaQuery(tab-port){
+    padding: 0 3rem;
+  
+  }
+
+}
+.text-center{
+  text-align: center;
+}
+.btn{
+  border: none;
+  padding: 1.5rem 2.5rem;
+  @extend %delay-timing;
+  cursor: pointer;
+  outline: none;
+
+}
+.btn:hover{
+  opacity: 0.9;
+}
+.btn-add{
+  background: $color-grey-secondary;
+  font-size: 1.6rem;
+  color: white;
+}
+.btn-grid{
+  justify-self: baseline;
+}
+.btn-del{
+  background: $color-danger;
+  color: $color-white;
+}
+.margin-b-s{
+  margin-bottom: 1.5rem;
+}
+.padding-tb-m{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.border-after::after{
+  content: "";
+  width: 4rem;
+  height: 0.2rem;
+  background: $color-dark;
+  display: block;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translateX(-50%) ;
+  -webkit-transform: translateX(-50%) ;
+  -moz-transform: translateX(-50%) ;
+  -ms-transform: translateX(-50%) ;
+  -o-transform: translateX(-50%) ;
+}
+
+.text-u{
+  text-transform: uppercase;
+}
+
+
+.page-header{
+  background: $color-grey;
+   }

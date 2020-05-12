@@ -1,0 +1,33 @@
+.filter{
+    background: $color-grey;
+    width: 100%;
+    padding: 3rem 0;
+
+    &-content{
+        display: flex;
+        @include respond-mediaQuery(tab-port){
+            display: block;
+          
+          }
+    }
+    &-input,
+    &-select{
+        margin-right: 1rem;
+        padding: 0 1rem;
+        border: 1px solid #dbdbdb;
+        
+        
+
+        &:focus{
+            border: 1px solid $color-blue;
+        }
+        @include respond-mediaQuery(tab-port){
+            display: block;
+            width: 70%;
+            margin-bottom: 1rem;
+            height: inherit;
+            min-height: 4rem;
+          
+          }
+    }
+}

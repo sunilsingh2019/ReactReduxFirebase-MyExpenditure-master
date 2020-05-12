@@ -1,0 +1,33 @@
+.header{
+    background-color: $color-blue;
+    color: $color-white;
+    padding: 2rem 0 2rem 0;
+
+    
+&-content{
+    display: flex;
+    width: 100%;
+    color: $color-white;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}
+    h1{
+        color: $color-white;
+       
+        
+    }
+    .btn{
+        padding: 0 !important;
+    }
+    .btn-logout{
+        background: none;
+        justify-self: right;
+        color: $color-white;
+        font-size: 2rem;
+        
+    }
+   
+}

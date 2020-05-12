@@ -1,0 +1,33 @@
+$color-white: #ffff;
+$color-dark: #212529;
+$color-blue: #0088CC;
+$color-danger:#dc3545;
+
+$color-grey: #ededed; 
+$color-grey-secondary: #646f79;
+
+%translate-xy{
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+%border-radius{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+%delay-timing{
+    transition-delay: 0.01s;
+}
+
+%box-shadow{
+      -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
+}

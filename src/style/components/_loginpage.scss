@@ -1,0 +1,45 @@
+.login-page{
+position: relative;
+height: 100vh;
+width: 100vw;
+background-size: cover;
+
+    &__box{
+        padding: 3.5rem 2.5rem;
+        text-align: center;       
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @extend %translate-xy;
+        z-index: 100;
+        background: $color-white;
+        @extend %border-radius;
+    }
+
+    .bg-video{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0.15;
+    &__content{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    }
+    .btn-login{
+        background: $color-blue;
+        color: $color-white;
+        margin-top: 4rem;
+        cursor: pointer;
+        @extend %delay-timing;
+      
+
+        &:hover{
+            @extend %box-shadow;
+        }
+      }
+}
